@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+.main{
+    width: 100%;
+}
+.button{
+    width: 185px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 5px;
+    transition: all 0.3s
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin:  0 auto;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+img{
+    object-fit: cover;
+}
+@media (max-width:1199.98px){
+    .container {
+        max-width: 960px;
+      }
+    .section-one .container .col--left{
+        width: 50%;
+    }
+    .section-two .container .title{
+        font-size: 40px;
+    }
+    .section-three .container .card .title{
+        font-size: 40px;
+    }
+    .section-three .container .img-right{
+        width: 30%;
+    }
+    .section-three .container .img-right img{
+        margin: 0px;
+    }
+    .section-four .container  .paragrap{
+        font-size: 18px;
+    }
+    .section-four .container .row .wrap{
+        width: calc(100% / 3);
+        padding: 0px;
+    }
+    .section-four .container .row .wrap ul li{
+        font-size: 16px;
+        margin: 0px 20px 60px;
+    }
+    .section-four .container .row .wrap ul li::before{
+        left: 10px; 
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    .section-four .container .row .wrap ul .the-last::before{
+        top: 65px;
+    }
+
+}
+@media (max-width:999px){
+    .header .header__nav, .header .header__icons-menu{
+        display: none;
+    }
+    .header__logo{
+        width: 40%;
+    }
+    .nav-inner-right{
+        width: 70%;
+    }
+    .header__icons-menu{
+        width: 100%;
+    }
+    .header .icon-bar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .container{
+        max-width: 720px;
+        justify-content: center;
+    }
+    .section-one .container .col--left{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .section-two .container{
+        flex-direction: column;
+    }
+    .section-two .content{
+        width: 100%;
+    }
+    .section-two .img{
+        width: 100%;
+        z-index: 2;
+        margin-bottom: 32px;
+    }
+    .section-two .img img{
+        width: 100%;
+        margin:0px;
+    }
+    .section-two .container .content{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-two .container .content .row-list > .item{
+        margin-right: 26px;
+    }
+    .section-two .content .item{
+        width: calc(100% / 3 - 26px);
+    }
+    .section-two .content a{
+        width: 25%;
+    }
+    .section-two .content .button{
+        width: 100%;
+    }
+    .section-three .container .card{
+        width: 100%;
+    }
+    .section-three .container .card .subtitle{
+        width: 100%;
+    }
+    .section-three .container .card .title{
+        font-size: 48px;
+        width: 100%;
+    }
+    .section-three .container .img-right{
+        width: 100%;
+        height: 100%;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    .section-three .container .img-right img{
+        width: 60%;
+        height: inherit;
+        object-fit: cover;
+        transform: scale(1);
+    }
+
+    .section-four .container .row{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .section-four .container .row .wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .section-four .container .row .wrap ul{
+        margin: 0px;
+    }
+    .section-four .container .row .wrap ul li{
+        margin: 0px 20px 10px;
+        padding: 10px;
+    }
+    .section-four .container .row .wrap ul li::before{
+        top:0px
+    }
+    .section-four .container .row .wrap ul .the-last::before{
+        top: 45px;
+    }
+    .section-five .container .row{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .section-five .container .card{
+        width: 342px;
+    }
+    .section-five .container .img{
+        width: 310px;
+    }
+    .section-five .container .content{
+        width: 100%;
+    }
+    .section-six .container{
+        flex-wrap: wrap;
+    }
+    .section-six .container  .col-left, .section-six .container .col-right{
+        width: 100%;
+    }
+    .section-seven .row{
+        flex-wrap: wrap;
+    }
+    .section-seven .row .card{
+        width: calc(50% - 32px);
+    }
+    .section-seven .container .background .wrapper{
+        flex-wrap: wrap;
+    }
+    .section-seven .container .background .wrapper .col{
+        width: 50%;
+    }
+    .section-seven .container .background .wrapper{
+        bottom: -40%;
+    }
+    .section-seven{
+        padding-bottom: 100px;
+    }
+    .section-eight .container .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px
+    }
+    .section-eight .container .row .card{
+        width: calc(50% - 10px);
+    }
+}
+@media(max-width: 768px)
+{
+    .container{
+        max-width: 540px;
+        text-align: center;
+    }
+    .section-one .section-one__button{
+        justify-content: center;
+    }
+    .section-two .container .content{
+        align-items: center;
+    }
+    .section-two .container .content .row-list > .item{
+        margin: 0px 16px;
+    }
+    .section-two .content a{
+        width: calc(100%/3 - 32px);
+    }
+    .section-two .content .button{
+        width: 100%;
+    }
+    .section-three .container .card .title{
+        font-size: 30px;
+    }
+    .section-three .container .img-right{
+        width: 100%;
+    }
+    .section-three .container .img-right img{
+        width: 100%;
+        margin: 0px 24px;
+    }
+
+    .section-four .container  .paragrap{
+        font-size: 17px;
+    }
+    .section-four .container{
+        align-items: center;
+    }
+    .section-five .container .row{
+        max-width: 550px;
+    }
+    .section-five .container .card{
+        width: 100%;
+        text-align: start;
+    }
+    .section-five .container .img{
+        width: 100%;
+    }
+    .section-seven .container .background .wrapper .col{
+        text-align: start;
+    }
+    .section-eight .container .row .card{
+        padding: 20px;
+    }
+    .section-nine .container .title{
+        font-size: 40px;
+    }
+    .section-ten .container .input .table {
+        flex-wrap:wrap ;
+        padding: 0px 16px;
+    }
+    .section-ten .container .input .table input{
+        width: 100%;
+        margin-right:0px ;
+    }
+}
+@media (max-width: 480.999px){
+    .container{
+        width: 100%;
+    }
+    .header__logo a span{
+        font-size: 20px;
+    }
+    .section-one .section-one__button{
+        flex-direction: column;
+    }
+    .section-two .content .row-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        min-height: 300px; 
+     }
+     .section-two .content .row-list .item{
+        min-width: 150px;
+         width: calc(33% - 32px);
+         height: (40% - 10px);
+         margin-bottom: 10px ;
+     }
+     .section-two .content a{
+        width: 150px;
+     }
+     .section-two .content .button{
+        width: 150px;
+     }
+     .section-six .container .col-left .title{
+        font-size: 40px;
+     }
+     .section-seven .row .card{
+        width: 100%;
+     }
+     .section-seven .container .background .wrapper .col{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-seven .container .background .wrapper{
+        bottom: -75%;
+        justify-content: center;
+    }
+    .section-seven{
+        padding-bottom: 340px;
+    }
+    .section-eight .container .row .card{
+        width: 100%;
+    }
+    .section-nine .container .title{
+        font-size: 30px;
+    }
+}
